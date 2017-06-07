@@ -3,12 +3,12 @@
 """
 Created on Mon Jun  5 23:00:26 2017
 
-@author: risingh
+@author: ricky
 """
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-# cmd + i inspect
+
 #importing data_set
 
 dataset = pd.read_csv("Salary_Data.csv");
