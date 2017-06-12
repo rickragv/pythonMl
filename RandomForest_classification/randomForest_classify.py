@@ -30,10 +30,8 @@ X_test= st_X.fit_transform(X_test)
 X_train= st_X.fit_transform(X_train)
 
 
-from sklearn.neighbors import KNeighborsClassifier
-#minkowski generalization of eucledean and manhattan distance
-# n_neighbors = how many neighbours to include for classification
-classify = KNeighborsClassifier(n_neighbors= 3 ,metric= 'minkowski',p= 2)
+from sklearn.ensemble import RandomForestClassifier
+classify = RandomForestClassifier(random_state=0,n_estimators=15,criterion="entropy")
 classify.fit(X_train,Y_train)
 
 Y_pred = classify.predict(X_test)

@@ -27,7 +27,7 @@ X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.25,random_sta
 from sklearn.preprocessing import StandardScaler
 st_X = StandardScaler()
 X_test= st_X.fit_transform(X_test)
-X_train= st_Y.fit_transform(X_train)
+X_train= st_X.fit_transform(X_train)
 
 # linear SVC model
 from sklearn.svm import SVC

@@ -27,7 +27,7 @@ X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.28,random_sta
 from sklearn.preprocessing import StandardScaler
 st_X = StandardScaler()
 X_test= st_X.fit_transform(X_test)
-X_train= st_Y.fit_transform(X_train)
+X_train= st_X.fit_transform(X_train)
 
 #logistic regression
 from sklearn.linear_model import LogisticRegression
